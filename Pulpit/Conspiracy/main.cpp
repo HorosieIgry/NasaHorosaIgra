@@ -52,6 +52,12 @@ game.initialize("Game Screen",&window);
 			game.Run();
 		
 		}
+		
+			if(game_state==4){
+			std::cout<<"GAME OVER"<<std::endl;
+			return 0;
+		
+		}
            
     }
     

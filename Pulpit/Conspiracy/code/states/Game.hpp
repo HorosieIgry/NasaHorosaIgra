@@ -1,17 +1,16 @@
 	class Game_screen : public Game_state{
 		private:
-		 sf::Sprite player;
-		// sf::Sprite ground;
+		 Player player;
 		 sf::Text debug_text;
 		 
 		 sf::Font font;
 		 
 		 Floor_Maker fmaker;
-		 
-		 
+
 		 int mov;
 		 int jmp;
 		 int jmp_border;
+		 
 		 PrimitiveGraphicBuffer pgb;
 		 World_Constants world;
 		 Platforms platformy;
@@ -20,19 +19,13 @@
 		 void Init(){
 			if(!initialized){
 				fmaker.print(); 
-				platformy = Platforms(world.platform_width,world.floor_height);
 				platformy.make(fmaker,world.platform_width,world.floor_height);
 				mov=1;
 				jmp=0;
 				jmp_border = SCRHEIGHT - world.floor_height - world.player_size.y;
 				pgb.setRenderWindow(render_window);
 				
-				/*sf::Texture tex2;
-				tex2.create(SCRWIDTH,world.floor_height);
-				ground.setTexture(tex2);
-				ground.setColor(sf::Color(0.f,255.f,255.f));
-				ground.setPosition(0, SCRHEIGHT- world.floor_height);
-				*/
+
 				
 			 sf::Texture texture;
 			 texture.create(world.player_size.x,world.player_size.y);
@@ -114,33 +107,32 @@
 			
 			//skakanie
 			
-			if(jmp!=0||player.getPosition().y<jmp_border){
+			if(jmp!=0||player.getPosition().y!=jmp_border||player.afloat(fmaker,world.platform_width,world.player_size.x)){
 				player.move(0.f,-jmp);
 				jmp-= world.gravitational_force;
 				
 				}
-			if(jmp<0&&player.getPosition().y>=jmp_border){
+			if(jmp<=0&&player.getPosition().y>=jmp_border&&!player.afloat(fmaker,world.platform_width,world.player_size.x)){
 				player.setPosition(player.getPosition().x,jmp_border);
 				jmp=0;
 				}
+			if(player.afloat(fmaker,world.platform_width,world.player_size.x)&&player.getPosition().y>SCRHEIGHT-world.floor_height)mov=0;
 			
+			
+			if(player.getPosition().y>SCRHEIGHT||player.getPosition().x>3000)game_state++;
 			
 			char buff[100]; 
-			sprintf(buff, "PLAYER_POS_X: %.0f\nPLAYER_POS_Y:%.0f\nFLOOR_BORDER:%d", player.getPosition().x,player.getPosition().y,jmp_border);
+			sprintf(buff, "PLAYER_POS_X: %.0f\nPLAYER_POS_Y:%.0f\nFLOOR_BORDER:%d\nAFLOAT%d", player.getPosition().x,player.getPosition().y,jmp_border,player.afloat(fmaker,world.platform_width,world.player_size.x));
 			debug_text.setString(buff);
 			
 			
 			};
 		
 		void Draw(){
-		//std::cout<<platformy.platforms.size()<<std::endl;
 		for(unsigned int i=0;i<platformy.platforms.size();i++){
-		std::cout<<i<<std::endl;			
 			pgb.addSprite(platformy.platforms[i]);
 			}
-		//pgb.addSprite(platformy.platforms[0]);
-		//pgb.addSprite(platformy.platforms[1]);
-		//pgb.addSprite(ground);
+
 		pgb.addSprite(player);
 
 		pgb.addText(debug_text);

@@ -4,7 +4,9 @@
 
 #include "code/mechanics/Floor_Maker.hpp"
 #include "code/mechanics/Platforms.hpp"
+#include "code/mechanics/Player.hpp"
 
 #include "code/states/Intro.hpp"
 #include "code/states/Logo.hpp"
 #include "code/states/Game.hpp"
+#include "code/states/Game_Over.hpp"
