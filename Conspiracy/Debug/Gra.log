@@ -1,4 +1,4 @@
-﻿Build started 2015-04-19 20:03:25.
+﻿Build started 2015-04-20 00:43:15.
      1>Project "C:\Users\John\Documents\Visual Studio 2013\Projects\Nasza-gra-master\Pulpit\Conspiracy\Gra.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          D:\Visual Studio\VC\bin\CL.exe /c /I"C:\Users\John\Documents\SFML\SFML-2.2\include" /Zi /nologo /W3 /WX- /Od /Oy- /D SFML_STATIC /D WIN32 /D _DEBUG /D _CONSOLE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
@@ -20,7 +20,6 @@
      1>c:\users\john\documents\visual studio 2013\projects\nasza-gra-master\pulpit\conspiracy\code/states/Game.hpp(34): warning C4244: 'argument' : conversion from 'float' to 'unsigned int', possible loss of data
      1>c:\users\john\documents\visual studio 2013\projects\nasza-gra-master\pulpit\conspiracy\code/states/Game.hpp(36): warning C4244: 'argument' : conversion from 'float' to 'sf::Uint8', possible loss of data
      1>c:\users\john\documents\visual studio 2013\projects\nasza-gra-master\pulpit\conspiracy\code/states/Game.hpp(111): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\john\documents\visual studio 2013\projects\nasza-gra-master\pulpit\conspiracy\code/states/Game.hpp(112): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
      1>c:\users\john\documents\visual studio 2013\projects\nasza-gra-master\pulpit\conspiracy\code/states/Game.hpp(116): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
      1>c:\users\john\documents\visual studio 2013\projects\nasza-gra-master\pulpit\conspiracy\code/states/Game.hpp(117): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
      1>c:\users\john\documents\visual studio 2013\projects\nasza-gra-master\pulpit\conspiracy\code/states/Game.hpp(120): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
@@ -35,4 +34,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:05.26
+Time Elapsed 00:00:03.72

@@ -28,7 +28,7 @@ player_size = sf::Vector2f(50,50);
 
 platform_width = 3*player_size.x;
 
-jmp_velocity = 30;
-gravitational_force = 1;
+jmp_velocity = 500;
+gravitational_force = 25;
 
 };

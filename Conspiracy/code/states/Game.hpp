@@ -11,7 +11,7 @@ private:
 	int jmp;
 	int jmp_border;
 
-	const float playerSpeed = 200.f;
+	const float playerSpeed = 300.f;
 	const sf::Time TimePerFrame = sf::seconds(1.f / 60.f);
 
 	PrimitiveGraphicBuffer pgb;
@@ -109,7 +109,7 @@ public:
 		//skakanie
 
 		if (jmp != 0 || player.getPosition().y != jmp_border || player.afloat(fmaker, world.platform_width, world.player_size.x)){
-			player.move(0.f, -jmp);
+			player.move(0.f, -jmp * elapsedTime.asSeconds());
 			jmp -= world.gravitational_force;
 
 		}
