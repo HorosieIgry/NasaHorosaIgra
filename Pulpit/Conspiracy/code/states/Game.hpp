@@ -3,6 +3,8 @@
 		 Player player;
 		 sf::Text debug_text;
 		 
+		 sf::Clock internal_FPS;
+		 
 		 sf::Font font;
 		 
 		 Floor_Maker fmaker;
@@ -18,6 +20,7 @@
 		public: 
 		 void Init(){
 			if(!initialized){
+				internal_FPS.restart();
 				fmaker.print(); 
 				platformy.make(fmaker,world.platform_width,world.floor_height);
 				mov=1;
@@ -122,7 +125,7 @@
 			if(player.getPosition().y>SCRHEIGHT||player.getPosition().x>3000)game_state++;
 			
 			char buff[100]; 
-			sprintf(buff, "PLAYER_POS_X: %.0f\nPLAYER_POS_Y:%.0f\nFLOOR_BORDER:%d\nAFLOAT%d", player.getPosition().x,player.getPosition().y,jmp_border,player.afloat(fmaker,world.platform_width,world.player_size.x));
+			sprintf(buff, "PLAYER_POS_X: %.0f\nPLAYER_POS_Y:%.0f\nFLOOR_BORDER:%d\nAFLOAT%d\nFPS:%.0f", player.getPosition().x,player.getPosition().y,jmp_border,player.afloat(fmaker,world.platform_width,world.player_size.x),1.f/internal_FPS.restart().asSeconds());
 			debug_text.setString(buff);
 			
 			

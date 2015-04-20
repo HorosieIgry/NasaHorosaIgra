@@ -28,6 +28,7 @@ srand (time(NULL));
 Intro intro;
 Logo logo;
 Game_screen game;
+window.setFramerateLimit(60);
 intro.initialize("Intro",&window);
 logo.initialize("Logo",&window);
 game.initialize("Game Screen",&window);
