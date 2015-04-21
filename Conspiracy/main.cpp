@@ -28,13 +28,10 @@ srand (time(NULL));
 Intro intro;
 Logo logo;
 Game_screen game;
+window.setFramerateLimit(60);
 intro.initialize("Intro",&window);
 logo.initialize("Logo",&window);
 game.initialize("Game Screen",&window);
-
-bool clockstart = 0;
-sf::Clock clock;
-sf::Time timeSinceLastUpdate;
 
     while (window.isOpen())
     {
@@ -53,13 +50,7 @@ sf::Time timeSinceLastUpdate;
        
            	if(game_state==3){
 
-				if (!clockstart){
-					clock.restart();
-					timeSinceLastUpdate = sf::Time::Zero;
-					clockstart = 1;
-				}
-
-			game.Run(clock, timeSinceLastUpdate);
+			game.Run();
 		
 		}
 		
