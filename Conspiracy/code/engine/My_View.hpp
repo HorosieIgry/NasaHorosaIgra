@@ -10,7 +10,7 @@ sf::Vector2u size = sprite.getTexture()->getSize();
 
 float x = size.x/2;
 float y = size.y/2;
-sf::Vector2f vec(x,y);
+sf::Vector2f vec(93/2,64/2);
 
 	setCenter(sprite.getPosition() + vec);
 	setSize(sf::Vector2f(SCRWIDTH, SCRHEIGHT));

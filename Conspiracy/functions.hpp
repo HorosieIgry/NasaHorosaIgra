@@ -55,7 +55,7 @@ void fadein_message(sf::Text* text){
 	}
 	
 		int next_text(sf::Text* text,std::string messages[6],int nr){
-		if(nr>6)return 1;
+		if(nr>2)return 1;
 		else{
 			sf::String uploader = messages[nr];
 			text->setString(uploader.toWideString());

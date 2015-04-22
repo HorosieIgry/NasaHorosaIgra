@@ -6,7 +6,7 @@ class Intro : public Game_state {
 
  int nr;
 	
-	std::string intro_table[7];	
+	std::string intro_table[5];	
 	   sf::Text text;
 	   
 protected:
@@ -29,13 +29,9 @@ protected:
   pressed = false;
   nr=0;
   
-  intro_table[0]="bla...";
-intro_table[1]="bla";
-intro_table[2]="blabla";
-intro_table[3]="bleh";
-intro_table[4]="bluh blih";
-intro_table[5]="ugi bugi";
-intro_table[6]="8====> - Karol Jankowski :-D";
+intro_table[0]="Graphics of cat made";
+intro_table[1]="by Shepardskin";
+intro_table[2]="8====> - Karol Jankowski :-D";
 
    load_font(&letter_font,"resources/fonts/4mini.ttf");
    cushion =  sf::RectangleShape(sf::Vector2f(SCRWIDTH, SCRHEIGHT));

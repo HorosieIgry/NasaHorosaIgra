@@ -1,6 +1,7 @@
-	class Game_screen : public Game_state{
+class Game_screen : public Game_state{
 		private:
 		 Player player;
+		 sf::Texture texture;	// o tu wstawi³em teksture, bo po wstawieniu ja w init usuwa sie ja za wczesnie i sprite nie ma jak jej wczytac
 		 sf::Text debug_text;
 		 
 		 sf::Clock internal_FPS;
@@ -12,6 +13,7 @@
 		 int mov;
 		 int jmp;
 		 int jmp_border;
+		 int x = 0;		// do zmieniania animacji poruszania siê
 		 
 		 PrimitiveGraphicBuffer pgb;
 		 World_Constants world;
@@ -29,11 +31,13 @@
 				pgb.setRenderWindow(render_window);
 				
 
-				
-			 sf::Texture texture;
-			 texture.create(world.player_size.x,world.player_size.y);
+			 //	intrect dziala tak fajnie, ze podajesz x, y pozycje startowe, a pozniej x, y o ile trza wyciac obrazek
+			 if (!texture.loadFromFile("resources/textures/catspritesx4.gif"))
+			 {
+				}
 			 player.setTexture(texture);
-			 player.setColor(sf::Color(255.f,0.f,0.f));
+			 player.setTextureRect(sf::IntRect(0, 136, 93, 64));
+			 
 			 player.setPosition(0,SCRHEIGHT- world.floor_height-world.player_size.y);
 			 
 
@@ -90,18 +94,47 @@
 		
 		void Update(){
 			//ogarnia przesuwanie elementow w plaszczyznie x
+			x++;
 			switch(mov){
 			case 1:
 
-			player.move(4.f,0.f);
-			pgb.std_view.move(4.f,0.f);
-			debug_text.move(4.f,0.f);
+			player.move(6.f,0.f);
+			pgb.std_view.move(6.f,0.f);
+			debug_text.move(6.f,0.f);
+
+			if (jmp <= 0 && player.getPosition().y >= jmp_border&&!player.afloat(fmaker, world.platform_width, world.player_size.x)){
+				/*if (x < 10) player.setTextureRect(sf::IntRect(0, 64, 32, 32));
+				else if (x < 20) player.setTextureRect(sf::IntRect(64, 64, 32, 32));
+				else x = 0; */
+				if (x < 5) player.setTextureRect(sf::IntRect(91, 136, -91, 64));
+				else if (x < 10) player.setTextureRect(sf::IntRect(182, 136, -91, 64));
+				else if (x < 15) player.setTextureRect(sf::IntRect(273, 136, -91, 64));
+				else if (x < 20) player.setTextureRect(sf::IntRect(364, 136, -91, 64));
+				else if (x < 25) player.setTextureRect(sf::IntRect(455, 136, -91, 64));
+				else if (x < 30) player.setTextureRect(sf::IntRect(543, 136, -91, 64));
+				else x = 0;
+			}
+	
 			break;
 			case -1:
 
-			player.move(-4.f,0.f);
-			pgb.std_view.move(-4.f,0.f);
-			debug_text.move(-4.f,0.f);
+			player.move(-6.f,0.f);
+			pgb.std_view.move(-6.f,0.f);
+			debug_text.move(-6.f,0.f);
+
+			if (jmp <= 0 && player.getPosition().y >= jmp_border&&!player.afloat(fmaker, world.platform_width, world.player_size.x)){
+				/*if (x < 10) player.setTextureRect(sf::IntRect(0, 32, 32, 32));
+				else if (x < 20) player.setTextureRect(sf::IntRect(64, 32, 32, 32));
+				else x = 0;*/
+				if (x < 5) player.setTextureRect(sf::IntRect(0, 136, 91, 64));
+				else if (x < 10) player.setTextureRect(sf::IntRect(91, 136, 91, 64));
+				else if (x < 15) player.setTextureRect(sf::IntRect(182, 136, 91, 64));
+				else if (x < 20) player.setTextureRect(sf::IntRect(273, 136, 91, 64));
+				else if (x < 25) player.setTextureRect(sf::IntRect(364, 136, 91, 64));
+				else if (x < 30) player.setTextureRect(sf::IntRect(455, 136, 91, 64));
+				else x = 0;
+			}
+
 			break;
 			default:
 			break;
@@ -113,6 +146,9 @@
 			if(jmp!=0||player.getPosition().y!=jmp_border||player.afloat(fmaker,world.platform_width,world.player_size.x)){
 				player.move(0.f,-jmp);
 				jmp-= world.gravitational_force;
+
+				if (mov == 1) player.setTextureRect(sf::IntRect(182, 136, -91, 64));
+				else player.setTextureRect(sf::IntRect(91, 136, 91, 64));
 				
 				}
 			if(jmp<=0&&player.getPosition().y>=jmp_border&&!player.afloat(fmaker,world.platform_width,world.player_size.x)){
