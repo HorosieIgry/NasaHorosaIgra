@@ -158,7 +158,7 @@ class Game_screen : public Game_state{
 			if(player.afloat(fmaker,world.platform_width,world.player_size.x)&&player.getPosition().y>SCRHEIGHT-world.floor_height)mov=0;
 			
 			
-			if(player.getPosition().y>SCRHEIGHT||player.getPosition().x>3000)game_state++;
+			if(player.getPosition().y>SCRHEIGHT||player.getPosition().x>3600)game_state++;
 			
 			char buff[100]; 
 			sprintf(buff, "PLAYER_POS_X: %.0f\nPLAYER_POS_Y:%.0f\nFLOOR_BORDER:%d\nAFLOAT%d\nFPS:%.0f", player.getPosition().x,player.getPosition().y,jmp_border,player.afloat(fmaker,world.platform_width,world.player_size.x),1.f/internal_FPS.restart().asSeconds());
