@@ -1,4 +1,6 @@
-class Player : public sf::Sprite{
+#include "Animated_Sprite.hpp"
+
+class Player : public Animated_Sprite{
 public:
 bool afloat(Floor_Maker f,int floor_w,int plr_x);
 

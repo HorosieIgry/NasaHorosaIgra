@@ -13,7 +13,6 @@ class Game_screen : public Game_state{
 		 int mov;
 		 int jmp;
 		 int jmp_border;
-		 int x = 0;		// do zmieniania animacji poruszania siê
 		 
 		 PrimitiveGraphicBuffer pgb;
 		 World_Constants world;
@@ -94,45 +93,30 @@ class Game_screen : public Game_state{
 		
 		void Update(){
 			//ogarnia przesuwanie elementow w plaszczyznie x
-			x++;
+			sf::Vector2f movement(0, 0);
+			
 			switch(mov){
 			case 1:
 
-			player.move(6.f,0.f);
-			pgb.std_view.move(6.f,0.f);
-			debug_text.move(6.f,0.f);
+				movement.x = 6;
+				player.move(movement);
+				pgb.std_view.move(movement);
+				debug_text.move(movement);
 
 			if (jmp <= 0 && player.getPosition().y >= jmp_border&&!player.afloat(fmaker, world.platform_width, world.player_size.x)){
-				/*if (x < 10) player.setTextureRect(sf::IntRect(0, 64, 32, 32));
-				else if (x < 20) player.setTextureRect(sf::IntRect(64, 64, 32, 32));
-				else x = 0; */
-				if (x < 5) player.setTextureRect(sf::IntRect(91, 136, -91, 64));
-				else if (x < 10) player.setTextureRect(sf::IntRect(182, 136, -91, 64));
-				else if (x < 15) player.setTextureRect(sf::IntRect(273, 136, -91, 64));
-				else if (x < 20) player.setTextureRect(sf::IntRect(364, 136, -91, 64));
-				else if (x < 25) player.setTextureRect(sf::IntRect(455, 136, -91, 64));
-				else if (x < 30) player.setTextureRect(sf::IntRect(543, 136, -91, 64));
-				else x = 0;
+				player.animate(sf::Vector2f(91.33f, 66.66f), 2, 5, 4, 1);
 			}
 	
 			break;
 			case -1:
-
-			player.move(-6.f,0.f);
-			pgb.std_view.move(-6.f,0.f);
-			debug_text.move(-6.f,0.f);
+			
+				movement.x = -6;
+				player.move(movement);
+				pgb.std_view.move(movement);
+				debug_text.move(movement);
 
 			if (jmp <= 0 && player.getPosition().y >= jmp_border&&!player.afloat(fmaker, world.platform_width, world.player_size.x)){
-				/*if (x < 10) player.setTextureRect(sf::IntRect(0, 32, 32, 32));
-				else if (x < 20) player.setTextureRect(sf::IntRect(64, 32, 32, 32));
-				else x = 0;*/
-				if (x < 5) player.setTextureRect(sf::IntRect(0, 136, 91, 64));
-				else if (x < 10) player.setTextureRect(sf::IntRect(91, 136, 91, 64));
-				else if (x < 15) player.setTextureRect(sf::IntRect(182, 136, 91, 64));
-				else if (x < 20) player.setTextureRect(sf::IntRect(273, 136, 91, 64));
-				else if (x < 25) player.setTextureRect(sf::IntRect(364, 136, 91, 64));
-				else if (x < 30) player.setTextureRect(sf::IntRect(455, 136, 91, 64));
-				else x = 0;
+				player.animate(sf::Vector2f(91.33f, 66.66f), 2, 5, 5, 0);
 			}
 
 			break;

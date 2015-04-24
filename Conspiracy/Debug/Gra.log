@@ -1,15 +1,16 @@
-﻿Build started 2015-04-22 09:37:32.
-     1>Project "C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Gra.vcxproj" on node 2 (LibLinkOnly target(s)).
-     1>Link:
-         D:\Visual Studio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\Gra.exe" /INCREMENTAL /NOLOGO "sfml-audio-s-d.lib" "sfml-graphics-s-d.lib" "sfml-network-s-d.lib" "sfml-window-s-d.lib" "sfml-system-s-d.lib" sndfile.lib openal32.lib jpeg.lib glew.lib freetype.lib ws2_32.lib gdi32.lib opengl32.lib winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\Gra.pdb" /SUBSYSTEM:CONSOLE /PGD:"C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\Gra.pgd" /LTCG:PGOptimize /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\Gra.lib" /MACHINE:X86 Debug\main.obj
-         Microsoft (R) Incremental Linker Version 12.00.31101.0
-         Copyright (C) Microsoft Corporation.  All rights reserved.
-         
-         "/OUT:C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\Gra.exe" /INCREMENTAL /NOLOGO "sfml-audio-s-d.lib" "sfml-graphics-s-d.lib" "sfml-network-s-d.lib" "sfml-window-s-d.lib" "sfml-system-s-d.lib" sndfile.lib openal32.lib jpeg.lib glew.lib freetype.lib ws2_32.lib gdi32.lib opengl32.lib winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST "/MANIFESTUAC:level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG "/PDB:C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\Gra.pdb" /SUBSYSTEM:CONSOLE "/PGD:C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\Gra.pgd" /LTCG:PGOptimize /TLBID:1 /DYNAMICBASE /NXCOMPAT "/IMPLIB:C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\Gra.lib" /MACHINE:X86 Debug\main.obj 
-     1>LINK : fatal error LNK1266: error reading instrumentation file 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\Gra.pgd'; File not found
-     1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets(607,5): error MSB6006: "link.exe" exited with code 1266.
-     1>Done Building Project "C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Gra.vcxproj" (LibLinkOnly target(s)) -- FAILED.
+﻿Build started 2015-04-24 18:29:19.
+     1>Project "C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Gra.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         D:\Visual Studio\VC\bin\CL.exe /c /I"C:\Users\John\Documents\SFML\SFML-2.2\include" /Zi /nologo /W3 /WX- /Od /Oy- /D SFML_STATIC /D WIN32 /D _DEBUG /D _CONSOLE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Animated_Sprite.cpp
+         Animated_Sprite.cpp
+     1>Animated_Sprite.cpp(6): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>Animated_Sprite.cpp(7): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+       Link:
+         D:\Visual Studio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\Gra.exe" /INCREMENTAL /NOLOGO "sfml-audio-s-d.lib" "sfml-graphics-s-d.lib" "sfml-network-s-d.lib" "sfml-window-s-d.lib" "sfml-system-s-d.lib" sndfile.lib openal32.lib jpeg.lib glew.lib freetype.lib ws2_32.lib gdi32.lib opengl32.lib winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\Gra.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\Gra.lib" /MACHINE:X86 Debug\Animated_Sprite.obj
+         Debug\main.obj
+         Gra.vcxproj -> C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\Gra.exe
+     1>Done Building Project "C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Gra.vcxproj" (Build target(s)).
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:05.89
+Time Elapsed 00:00:02.29
