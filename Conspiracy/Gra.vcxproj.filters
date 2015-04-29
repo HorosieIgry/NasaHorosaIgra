@@ -41,9 +41,6 @@
     <ClInclude Include="code\engine\World_Constants.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="code\mechanics\Floor_Maker.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="code\mechanics\Platforms.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>

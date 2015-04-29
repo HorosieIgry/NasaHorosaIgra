@@ -87,7 +87,6 @@
     <ClInclude Include="code\engine\My_View.hpp" />
     <ClInclude Include="code\engine\Primitive_Graphic_Buffer.hpp" />
     <ClInclude Include="code\engine\World_Constants.hpp" />
-    <ClInclude Include="code\mechanics\Floor_Maker.hpp" />
     <ClInclude Include="code\mechanics\Platforms.hpp" />
     <ClInclude Include="code\mechanics\Player.hpp" />
     <ClInclude Include="code\scraps\states.hpp" />
