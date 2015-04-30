@@ -1,0 +1,89 @@
+﻿Build started 2015-04-21 17:58:25.
+     1>Project "C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Gra.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         D:\Visual Studio\VC\bin\CL.exe /c /I"C:\Users\John\Documents\SFML\SFML-2.2\include" /Zi /nologo /W3 /WX- /Od /Oy- /D SFML_STATIC /D WIN32 /D _DEBUG /D _CONSOLE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>c:\users\john\documents\github\nasahorosaigra\conspiracy\functions.hpp(24): warning C4244: 'argument' : conversion from 'float' to 'sf::Uint8', possible loss of data
+     1>c:\users\john\documents\github\nasahorosaigra\conspiracy\functions.hpp(32): warning C4244: 'argument' : conversion from 'float' to 'sf::Uint8', possible loss of data
+     1>c:\users\john\documents\github\nasahorosaigra\conspiracy\functions.hpp(34): warning C4244: 'argument' : conversion from 'float' to 'sf::Uint8', possible loss of data
+     1>c:\users\john\documents\github\nasahorosaigra\conspiracy\functions.hpp(46): warning C4244: 'argument' : conversion from 'float' to 'sf::Uint8', possible loss of data
+     1>c:\users\john\documents\github\nasahorosaigra\conspiracy\functions.hpp(49): warning C4244: 'argument' : conversion from 'float' to 'sf::Uint8', possible loss of data
+     1>c:\users\john\documents\github\nasahorosaigra\conspiracy\code/engine/My_View.hpp(11): warning C4244: 'initializing' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\users\john\documents\github\nasahorosaigra\conspiracy\code/engine/My_View.hpp(12): warning C4244: 'initializing' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\users\john\documents\github\nasahorosaigra\conspiracy\code/engine/World_Constants.hpp(25): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\john\documents\github\nasahorosaigra\conspiracy\code/engine/World_Constants.hpp(29): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\john\documents\github\nasahorosaigra\conspiracy\code/mechanics/Platforms.hpp(34): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\john\documents\github\nasahorosaigra\conspiracy\code/mechanics/Player.hpp(9): warning C4244: 'initializing' : conversion from 'const float' to 'int', possible loss of data
+     1>c:\users\john\documents\github\nasahorosaigra\conspiracy\code/states/Intro.hpp(43): warning C4244: 'argument' : conversion from 'float' to 'sf::Uint8', possible loss of data
+     1>c:\users\john\documents\github\nasahorosaigra\conspiracy\code/states/Logo.hpp(27): warning C4244: 'argument' : conversion from 'float' to 'sf::Uint8', possible loss of data
+     1>c:\users\john\documents\github\nasahorosaigra\conspiracy\code/states/Game.hpp(28): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\john\documents\github\nasahorosaigra\conspiracy\code/states/Game.hpp(34): warning C4244: 'argument' : conversion from 'float' to 'unsigned int', possible loss of data
+     1>c:\users\john\documents\github\nasahorosaigra\conspiracy\code/states/Game.hpp(36): warning C4244: 'argument' : conversion from 'float' to 'sf::Uint8', possible loss of data
+     1>c:\users\john\documents\github\nasahorosaigra\conspiracy\code/states/Game.hpp(113): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\john\documents\github\nasahorosaigra\conspiracy\code/states/Game.hpp(114): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\john\documents\github\nasahorosaigra\conspiracy\code/states/Game.hpp(118): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\john\documents\github\nasahorosaigra\conspiracy\code/states/Game.hpp(119): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\john\documents\github\nasahorosaigra\conspiracy\code/states/Game.hpp(122): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\john\documents\github\nasahorosaigra\conspiracy\code/states/Game.hpp(128): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\john\documents\github\nasahorosaigra\conspiracy\code/states/Game.hpp(128): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Visual Studio\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>main.cpp(26): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+       Link:
+         D:\Visual Studio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\Gra.exe" /INCREMENTAL /NOLOGO "sfml-audio-s-d.lib" "sfml-graphics-s-d.lib" "sfml-network-s-d.lib" "sfml-window-s-d.lib" "sfml-system-s-d.lib" sndfile.lib openal32.lib jpeg.lib glew.lib freetype.lib ws2_32.lib gdi32.lib opengl32.lib winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\Gra.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\Gra.lib" /MACHINE:X86 Debug\main.obj
+         LINK : C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\Gra.exe not found or not built by the last incremental link; performing full link
+     1>sfml-graphics-s-d.lib(BlendMode.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-graphics-s-d.lib(Color.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-graphics-s-d.lib(Font.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-graphics-s-d.lib(GLCheck.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-graphics-s-d.lib(GLExtensions.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-graphics-s-d.lib(Image.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-graphics-s-d.lib(ImageLoader.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-graphics-s-d.lib(RenderStates.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-graphics-s-d.lib(RenderTarget.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-graphics-s-d.lib(RenderWindow.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-graphics-s-d.lib(Shader.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-graphics-s-d.lib(Texture.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-graphics-s-d.lib(TextureSaver.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-graphics-s-d.lib(Transform.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-graphics-s-d.lib(Transformable.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-graphics-s-d.lib(View.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-graphics-s-d.lib(Vertex.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-graphics-s-d.lib(Shape.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-graphics-s-d.lib(RectangleShape.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-graphics-s-d.lib(Sprite.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-graphics-s-d.lib(Text.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-graphics-s-d.lib(VertexArray.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-window-s-d.lib(Context.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-window-s-d.lib(GlContext.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-window-s-d.lib(GlResource.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-window-s-d.lib(Joystick.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-window-s-d.lib(JoystickManager.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-window-s-d.lib(Keyboard.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-window-s-d.lib(SensorManager.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-window-s-d.lib(VideoMode.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-window-s-d.lib(Window.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-window-s-d.lib(WindowImpl.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-window-s-d.lib(WglContext.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-window-s-d.lib(InputImpl.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-window-s-d.lib(JoystickImpl.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-window-s-d.lib(SensorImpl.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-window-s-d.lib(VideoModeImpl.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-window-s-d.lib(WindowImplWin32.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-system-s-d.lib(Clock.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-system-s-d.lib(Err.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-system-s-d.lib(Lock.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-system-s-d.lib(Mutex.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-system-s-d.lib(Sleep.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-system-s-d.lib(String.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-system-s-d.lib(ThreadLocal.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-system-s-d.lib(Time.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-system-s-d.lib(ClockImpl.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-system-s-d.lib(MutexImpl.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-system-s-d.lib(SleepImpl.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>sfml-system-s-d.lib(ThreadLocalImpl.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
+         Gra.vcxproj -> C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\Gra.exe
+     1>Done Building Project "C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Gra.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:14.49
