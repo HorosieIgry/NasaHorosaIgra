@@ -1,10 +1,11 @@
-#include "code/engine/My_View.hpp"
-#include "code/engine/Primitive_Graphic_Buffer.hpp"
-#include "code/engine/World_Constants.hpp"
+#include "code/engine/My_View.cpp"
+#include "code/engine/Primitive_Graphic_Buffer.cpp"
+#include "code/engine/World_Constants.cpp"
 
-#include "code/mechanics/Floor_Maker.hpp"
-#include "code/mechanics/Platforms.hpp"
-#include "code/mechanics/Player.hpp"
+#include "code/mechanics/Platforms.cpp"
+#include "code/mechanics/Animated_Sprite.hpp"
+#include "code/mechanics/Animated_Sprite.cpp"
+#include "code/mechanics/Player.cpp"
 
 #include "code/states/Intro.hpp"
 #include "code/states/Logo.hpp"

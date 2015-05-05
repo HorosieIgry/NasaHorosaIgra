@@ -1,44 +1,28 @@
 class Platforms{
-	
+// Arek paczaj robie komentarze
+//przerabiam klase Platforms tak zeby nie trzeba było
+// klasy Floor_Maker	
 private:
 	sf::Texture good_one(int x,int y);
-	sf::Sprite ziutek[20];
-	
+	// generuje sprita do vectora platforms
+	sf::Sprite zulek(int width,int height);
+	//pointer - pokazuje gdzie będzie następna platforma
+	int pointer;
+
 public:
-std::vector<sf::Sprite>platforms;
+sf::Texture teksi;
+sf::Sprite mati;
+std::vector<sf::Sprite>platforms; //przechowuje sprajty platform
+std::vector<int>platform_map;   //mapa dziur i platform
+// Konstruktor
 Platforms(int width,int height);
 Platforms();
-void make(Floor_Maker f,int width,int height);
+// void update - updatuje mape i platfromy
+void update(int width,int height);
+//wyswietlamape
+void print();
 
-
+int getPointer();
 };
 
-Platforms::Platforms(){};
 
-sf::Texture Platforms::good_one(int x,int y){
-	sf::Texture maciek;
-	maciek.create(x,y);
-	return maciek;
-	};
-
-
-void Platforms::make(Floor_Maker f,int width,int height){
-
-
-	
-for(int i =0;i<20;i++){
-	if(f.floor[i]==1){
-			std::cout<<"Start"<<std::endl;
-		ziutek[i].setTexture(good_one(width,height));
-		ziutek[i].setColor(sf::Color(0,255,255));	
-		ziutek[i].setPosition(i*width,SCRHEIGHT-height);
-		platforms.push_back(ziutek[i]);
-		std::cout<<"End"<<std::endl;
-		}
-	
-	
-	}
-std::cout<<"End of all"<<std::endl;
-
-
-};

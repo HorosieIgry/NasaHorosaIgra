@@ -79,9 +79,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Animated_Sprite.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Animated_Sprite.hpp" />
     <ClInclude Include="code\engine\My_View.hpp" />
     <ClInclude Include="code\engine\Primitive_Graphic_Buffer.hpp" />
     <ClInclude Include="code\engine\World_Constants.hpp" />
