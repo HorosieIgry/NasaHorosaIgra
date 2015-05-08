@@ -6,6 +6,7 @@
 #include "code/mechanics/Animated_Sprite.hpp"
 #include "code/mechanics/Animated_Sprite.cpp"
 #include "code/mechanics/Player.cpp"
+#include "code/mechanics/Background.cpp"
 
 #include "code/states/Intro.hpp"
 #include "code/states/Logo.hpp"

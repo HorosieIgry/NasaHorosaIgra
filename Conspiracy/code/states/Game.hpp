@@ -17,10 +17,12 @@ class Game_screen : public Game_state{
 		 PrimitiveGraphicBuffer pgb;
 		 World_Constants world;
 		 Platforms platformy;
-		  
+		 Dynamic_bg background; 
 		public: 
 		 void Init(){
 			if(!initialized){
+				
+				background = Dynamic_bg(SCRWIDTH,SCRHEIGHT);
 				platformy =  Platforms(world.platform_width,world.floor_height);
 				//	std::cout<<"PLatforms initialized"<<std::endl;
 				internal_FPS.restart();
@@ -93,6 +95,11 @@ class Game_screen : public Game_state{
 			 };
 		
 		void Update(){
+			
+			//slonce ksiezyc i background
+			background.update(player.getPosition());
+			
+			
 			//ogarnia przesuwanie elementow w plaszczyznie x
 			sf::Vector2f movement(0, 0);
 			
@@ -160,12 +167,14 @@ class Game_screen : public Game_state{
 			};
 		
 		void Draw(){
+			//wrzuca tlo do rysowania
+			pgb.addSprite(background.smoon);
 			//	std::cout<<"Przed wyswietlaniem"<<std::endl;
-				platformy.print();
+				//platformy.print();
 		for(unsigned int i=0;i<platformy.platforms.size();i++){
-			//	std::cout<<"1sze wysw"<<std::endl;
+		//		std::cout<<"1sze wysw"<<std::endl;
 			pgb.addSprite(platformy.platforms[i]);
-			//	std::cout<<"Po"<<std::endl;
+	//			std::cout<<"Po"<<std::endl;
 			}
 
 		pgb.addSprite(player);
