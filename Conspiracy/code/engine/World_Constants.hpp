@@ -1,3 +1,9 @@
+#ifndef WORLD_CONSTANTS_HPP
+#define WORLD_CONSTANTS_HPP
+
+#include "SFML/System/Vector2.hpp"
+#include "../../Screen.hpp"
+
 class World_Constants{
 
 public:
@@ -5,7 +11,6 @@ public:
 //platforms
 int floor_height;
 int platform_width;
-int platform_height; 
 
 //player
 sf::Vector2f player_size;
@@ -17,20 +22,6 @@ int jmp_velocity;
 
 World_Constants();
 
-
-
 };
 
-World_Constants::World_Constants(){
-	
-floor_height = 0.25*SCRHEIGHT;
-
-player_size = sf::Vector2f(93,64);
-
-platform_width = 120;
-platform_height = 30;
-
-jmp_velocity = 30;
-gravitational_force = 2;
-
-};
+#endif

@@ -79,14 +79,28 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Animated_Sprite.cpp" />
+    <ClCompile Include="code\engine\My_View.cpp" />
+    <ClCompile Include="code\engine\Primitive_Graphic_Buffer.cpp" />
+    <ClCompile Include="code\engine\World_Constants.cpp" />
+    <ClCompile Include="code\mechanics\Animated_Sprite.cpp" />
+    <ClCompile Include="code\mechanics\Background.cpp" />
+    <ClCompile Include="code\mechanics\Platforms.cpp" />
+    <ClCompile Include="code\mechanics\Player.cpp" />
+    <ClCompile Include="code\scraps\States.cpp" />
+    <ClCompile Include="code\states\Game.cpp" />
+    <ClCompile Include="code\states\Intro.cpp" />
+    <ClCompile Include="code\states\Logo.cpp" />
+    <ClCompile Include="Functions.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="State_Manager.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Animated_Sprite.hpp" />
     <ClInclude Include="code\engine\My_View.hpp" />
     <ClInclude Include="code\engine\Primitive_Graphic_Buffer.hpp" />
     <ClInclude Include="code\engine\World_Constants.hpp" />
+    <ClInclude Include="code\mechanics\Animated_Sprite.hpp" />
+    <ClInclude Include="code\mechanics\Background.hpp" />
+    <ClInclude Include="code\mechanics\Floor_Maker.hpp" />
     <ClInclude Include="code\mechanics\Platforms.hpp" />
     <ClInclude Include="code\mechanics\Player.hpp" />
     <ClInclude Include="code\scraps\states.hpp" />
@@ -96,6 +110,7 @@
     <ClInclude Include="code\states\Logo.hpp" />
     <ClInclude Include="functions.hpp" />
     <ClInclude Include="importer.hpp" />
+    <ClInclude Include="Screen.hpp" />
     <ClInclude Include="state_manager.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

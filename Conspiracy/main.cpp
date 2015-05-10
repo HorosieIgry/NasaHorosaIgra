@@ -1,21 +1,19 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
 #include <iostream>
+#include <cmath>
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <string>
 #include <vector>
-#define SCRWIDTH  800
-#define SCRHEIGHT  600
 
-	int game_state=1;
-
-
+#include "Screen.hpp"
 #include "functions.hpp"
 #include "state_manager.hpp" 
 #include "importer.hpp"
 
+int game_state = 1;
 
 int main()
 {

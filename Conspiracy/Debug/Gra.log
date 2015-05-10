@@ -1,9 +1,45 @@
-﻿Build started 2015-04-29 22:02:36.
+﻿Build started 2015-05-10 12:47:24.
      1>Project "C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Gra.vcxproj" on node 2 (Build target(s)).
-     1>Link:
-         D:\Visual Studio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\Gra.exe" /INCREMENTAL /NOLOGO "sfml-audio-s-d.lib" "sfml-graphics-s-d.lib" "sfml-network-s-d.lib" "sfml-window-s-d.lib" "sfml-system-s-d.lib" sndfile.lib openal32.lib jpeg.lib glew.lib freetype.lib ws2_32.lib gdi32.lib opengl32.lib winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\Gra.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\Gra.lib" /MACHINE:X86 Debug\Animated_Sprite.obj
+     1>ClCompile:
+         D:\Visual Studio\VC\bin\CL.exe /c /I"C:\Users\John\Documents\SFML\SFML-2.2\include" /Zi /nologo /W3 /WX- /Od /Oy- /D SFML_STATIC /D WIN32 /D _DEBUG /D _CONSOLE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Functions.cpp code\engine\My_View.cpp code\engine\Primitive_Graphic_Buffer.cpp code\engine\World_Constants.cpp code\mechanics\Platforms.cpp code\mechanics\Player.cpp code\scraps\States.cpp code\states\Intro.cpp code\states\Logo.cpp main.cpp
+         main.cpp
+     1>main.cpp(24): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+         Logo.cpp
+     1>code\states\Logo.cpp(11): warning C4244: 'argument' : conversion from 'float' to 'sf::Uint8', possible loss of data
+         Intro.cpp
+     1>code\states\Intro.cpp(17): warning C4244: 'argument' : conversion from 'float' to 'sf::Uint8', possible loss of data
+         States.cpp
+     1>code\scraps\States.cpp(29): warning C4244: 'argument' : conversion from 'float' to 'sf::Uint8', possible loss of data
+     1>code\scraps\States.cpp(126): warning C4244: 'argument' : conversion from 'float' to 'sf::Uint8', possible loss of data
+     1>code\scraps\States.cpp(218): warning C4244: 'argument' : conversion from 'float' to 'sf::Uint8', possible loss of data
+         Functions.cpp
+     1>Functions.cpp(21): warning C4244: 'argument' : conversion from 'float' to 'sf::Uint8', possible loss of data
+     1>Functions.cpp(29): warning C4244: 'argument' : conversion from 'float' to 'sf::Uint8', possible loss of data
+     1>Functions.cpp(31): warning C4244: 'argument' : conversion from 'float' to 'sf::Uint8', possible loss of data
+     1>Functions.cpp(43): warning C4244: 'argument' : conversion from 'float' to 'sf::Uint8', possible loss of data
+     1>Functions.cpp(46): warning C4244: 'argument' : conversion from 'float' to 'sf::Uint8', possible loss of data
+         Generating Code...
+         Skipping... (no relevant changes detected)
+         Player.cpp
+         Platforms.cpp
+         World_Constants.cpp
+         Primitive_Graphic_Buffer.cpp
+         My_View.cpp
+       Link:
+         D:\Visual Studio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\Gra.exe" /INCREMENTAL /NOLOGO "sfml-audio-s-d.lib" "sfml-graphics-s-d.lib" "sfml-network-s-d.lib" "sfml-window-s-d.lib" "sfml-system-s-d.lib" sndfile.lib openal32.lib jpeg.lib glew.lib freetype.lib ws2_32.lib gdi32.lib opengl32.lib winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\Gra.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\Gra.lib" /MACHINE:X86 Debug\My_View.obj
+         Debug\Primitive_Graphic_Buffer.obj
+         Debug\World_Constants.obj
+         Debug\Animated_Sprite.obj
+         Debug\Background.obj
+         Debug\Platforms.obj
+         Debug\Player.obj
+         Debug\States.obj
+         Debug\Game.obj
+         Debug\Intro.obj
+         Debug\Logo.obj
+         Debug\Functions.obj
          Debug\main.obj
-         LINK : C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\Gra.exe not found or not built by the last incremental link; performing full link
+         Debug\State_Manager.obj
      1>sfml-graphics-s-d.lib(BlendMode.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
      1>sfml-graphics-s-d.lib(Color.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
      1>sfml-graphics-s-d.lib(Font.cpp.obj) : warning LNK4204: 'C:\Users\John\Documents\GitHub\NasaHorosaIgra\Conspiracy\Debug\vc120.pdb' is missing debugging information for referencing module; linking object as if no debug info
@@ -59,4 +95,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.32
+Time Elapsed 00:00:08.85
