@@ -18,15 +18,45 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Animated_Sprite.cpp">
+    <ClCompile Include="code\engine\My_View.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\engine\Primitive_Graphic_Buffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\engine\World_Constants.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\mechanics\Animated_Sprite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\mechanics\Platforms.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\mechanics\Player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\mechanics\Background.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\states\Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Functions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\states\Logo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\states\Intro.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="State_Manager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="functions.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="importer.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="state_manager.hpp">
@@ -41,16 +71,10 @@
     <ClInclude Include="code\engine\World_Constants.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="code\mechanics\Floor_Maker.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="code\mechanics\Platforms.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="code\mechanics\Player.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="code\scraps\states.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="code\states\Game.hpp">
@@ -65,7 +89,13 @@
     <ClInclude Include="code\states\Logo.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Animated_Sprite.hpp">
+    <ClInclude Include="code\mechanics\Animated_Sprite.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Screen.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\mechanics\Background.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

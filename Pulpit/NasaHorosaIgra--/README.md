@@ -1,2 +1,0 @@
-# NasaHorosaIgra
-Наша хороша игра.

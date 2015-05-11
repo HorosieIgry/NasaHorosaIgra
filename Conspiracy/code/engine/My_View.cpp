@@ -1,9 +1,6 @@
 #include "My_View.hpp"
 
-
-
 void My_View::center_on(sf::Sprite sprite){
-
 
 //chwilowo zakomentarzowane żeby błędu nie było
 /*sf::Vector2u size = sprite.getTexture()->getSize();

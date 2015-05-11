@@ -7,16 +7,17 @@
 #include <time.h>
 #include <string>
 #include <vector>
-#define SCRWIDTH  800
-#define SCRHEIGHT  600
 
-	int game_state=1;
-
-
+#include "Screen.hpp"
 #include "functions.hpp"
 #include "state_manager.hpp" 
-#include "importer.hpp"
 
+#include "code/states/Intro.hpp"
+#include "code/states/Logo.hpp"
+#include "code/states/Game.hpp"
+#include "code/states/Game_Over.hpp"
+
+int game_state = 1;
 
 int main()
 {

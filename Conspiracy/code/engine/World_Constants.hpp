@@ -1,3 +1,9 @@
+#ifndef WORLD_CONSTANTS_HPP
+#define WORLD_CONSTANTS_HPP
+
+#include "SFML/System/Vector2.hpp"
+#include "../../Screen.hpp"
+
 class World_Constants{
 
 public:
@@ -16,7 +22,6 @@ int jmp_velocity;
 
 World_Constants();
 
-
-
 };
 
+#endif

@@ -1,3 +1,10 @@
+#ifndef PRIMITIVE_GRAPHIC_BUFFER_HPP
+#define PRIMITIVE_GRAPHIC_BUFFER_HPP
+
+#include <vector>
+#include "SFML/Graphics.hpp"
+#include "My_View.hpp"
+
 class PrimitiveGraphicBuffer{
 	
 	private:
@@ -23,3 +30,4 @@ class PrimitiveGraphicBuffer{
 	
 	};
 	
+#endif

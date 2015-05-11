@@ -1,3 +1,13 @@
+#ifndef BACKGROUND_HPP
+#define BACKGROUND_HPP
+
+#include <SFML/System/Clock.hpp>
+#include <SFML/System/Vector2.hpp>
+#include <SFML/Graphics/Texture.hpp>
+#include <SFML/Graphics/Sprite.hpp>
+
+#include <iostream>
+
 //klasa robiaca tlo z przesuwajacym sie sloncem
 class Dynamic_bg {
 	
@@ -22,3 +32,5 @@ class Dynamic_bg {
 	//sf::Texture smun;
 	
 };
+
+#endif
